@@ -1,3 +1,5 @@
 ---
+namespace: arc-system
 resources:
   - namespace.yaml
+  - helm.yaml
