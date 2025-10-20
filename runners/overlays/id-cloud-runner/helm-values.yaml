@@ -1,0 +1,28 @@
+---
+githubConfigUrl: "https://github.com/id-unibe-ch"
+githubConfigSecret: "id-cloud-runner"
+minRunners: 3
+maxRunners: 30
+containerMode:
+  type: "dind"
+
+
+listenerTemplate:
+  metadata:
+    labels:
+      azure.workload.identity/use: "true"
+  spec:
+    serviceAccountName: "workload-identity-sa"
+    containers:
+    - name: listener
+      volumeMounts:
+      - name: secrets-store01-inline
+        mountPath: "/mnt/secrets-store"
+        readOnly: true
+  volumes:
+    - name: secrets-store01-inline
+      csi:
+        driver: secrets-store.csi.k8s.io
+        readOnly: true
+        volumeAttributes:
+          secretProviderClass: "azure-kvname-wi"
