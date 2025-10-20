@@ -19,4 +19,5 @@ patches:
       kind: SecretProviderClass
       name: azure-kvname-wi
     path: keyvault-patch.yaml
-
+generatorOptions:
+  disableNameSuffixHash: true

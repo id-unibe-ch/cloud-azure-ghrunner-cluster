@@ -24,3 +24,7 @@ spec:
   interval: 10m
   values:
     replicaCount: 2
+  valuesFrom:
+    - kind: ConfigMap
+      name: helm-values
+      valuesKey: helm-values.yaml
