@@ -17,8 +17,9 @@
         objectVersion: ""
 
 - op: replace
-  path: /spec/secretObjects/0/data
-  value: |
+  path: /spec/secretObjects/0
+  value: 
+    data: |
     - objectName: id-cloud-runner-app-id
       key: github_app_id
     - objectName: id-cloud-runner-app-installation-id
