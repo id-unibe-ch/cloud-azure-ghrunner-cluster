@@ -1,6 +1,9 @@
 ---
 githubConfigUrl: "https://github.com/id-unibe-ch"
 githubConfigSecret: "id-cloud-runner"
+runnerScaleSetName: "id-cloud-runner"
+runnerGroup: "arc-runners"
+
 minRunners: 3
 maxRunners: 30
 containerMode:

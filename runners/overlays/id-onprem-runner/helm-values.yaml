@@ -1,0 +1,10 @@
+---
+githubConfigUrl: "https://github.unibe.ch/id-unibe-ch"
+githubConfigSecret: "id-onprem-runner"
+runnerScaleSetName: "id-onprem-runner"
+runnerGroup: "arc-runners"
+
+minRunners: 3
+maxRunners: 30
+containerMode:
+  type: "dind"
