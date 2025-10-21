@@ -19,5 +19,12 @@ patches:
       kind: SecretProviderClass
       name: azure-kvname-wi
     path: keyvault-patch.yaml
+  - target:
+      kind: Namespace
+    patch: |
+      - op: add
+        path: /metadata/annotations
+        value:
+          scheduler.alpha.kubernetes.io/tolerationsWhitelist: '[]'
 generatorOptions:
   disableNameSuffixHash: true
