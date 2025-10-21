@@ -1,4 +1,4 @@
 ---
 - op: replace
   path: /spec/chartRef/namespace
-  value: id-onprem-runner
+  value: id-private-ghec-runner

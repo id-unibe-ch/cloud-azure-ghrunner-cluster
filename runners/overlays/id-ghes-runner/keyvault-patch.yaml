@@ -4,15 +4,15 @@
   value: |
     array:
       - |
-        objectName: id-cloud-runner-app-id
+        objectName: id-onprem-runner-app-id
         objectType: secret
         objectVersion: ""
       - |
-        objectName: id-cloud-runner-app-installation-id
+        objectName: id-onprem-runner-app-installation-id
         objectType: secret
         objectVersion: ""
       - |
-        objectName: id-cloud-runner-app-private-key
+        objectName: id-onprem-runner-app-private-key
         objectType: secret
         objectVersion: ""
 
@@ -20,11 +20,11 @@
   path: /spec/secretObjects/0
   value: 
     data: 
-    - objectName: id-cloud-runner-app-id
+    - objectName: id-onprem-runner-app-id
       key: github_app_id
-    - objectName: id-cloud-runner-app-installation-id
+    - objectName: id-onprem-runner-app-installation-id
       key: github_app_installation_id
-    - objectName: id-cloud-runner-app-private-key
+    - objectName: id-onprem-runner-app-private-key
       key: github_app_private_key
-    secretName: id-cloud-runner
+    secretName: id-ghes-runner
     type: Opaque

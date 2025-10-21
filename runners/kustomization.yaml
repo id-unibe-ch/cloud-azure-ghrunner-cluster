@@ -1,3 +1,4 @@
 resources:
-  - ./overlays/id-cloud-runner
-  - ./overlays/id-onprem-runner
+  - ./overlays/id-ghec-runner
+  - ./overlays/id-ghes-runner
+  - ./overlays/id-private-ghec-runner

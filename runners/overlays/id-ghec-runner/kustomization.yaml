@@ -1,5 +1,5 @@
 ---
-namespace: id-onprem-runner
+namespace: id-ghec-runner
 resources:
   - ../base
 configMapGenerator:

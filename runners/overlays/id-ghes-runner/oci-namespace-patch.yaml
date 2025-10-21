@@ -1,0 +1,4 @@
+---
+- op: replace
+  path: /spec/chartRef/namespace
+  value: id-ghes-runner

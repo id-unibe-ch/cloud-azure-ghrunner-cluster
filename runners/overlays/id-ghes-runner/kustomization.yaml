@@ -1,5 +1,5 @@
 ---
-namespace: id-cloud-runner
+namespace: id-ghes-runner
 resources:
   - ../base
 configMapGenerator:
