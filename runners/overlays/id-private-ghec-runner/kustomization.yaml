@@ -26,6 +26,5 @@ patches:
         path: /metadata/annotations
         value:
           scheduler.alpha.kubernetes.io/defaultTolerations: '[{"operator": "Equal", "effect":"NoSchedule", "key":"private.runner", "value":"id"}]'
-          scheduler.alpha.kubernetes.io/tolerationsWhitelist: '[{"operator": "Equal", "effect":"NoSchedule", "key":"private.runner", "value":"id"}]'
 generatorOptions:
   disableNameSuffixHash: true
