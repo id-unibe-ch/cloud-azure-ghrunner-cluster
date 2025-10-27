@@ -1,3 +1,4 @@
 resources:
   - ./overlays/id-ghec-runner
   - ./overlays/id-ghes-runner
+  - ./overlays/idasm-ghec-runner

@@ -1,0 +1,17 @@
+---
+githubConfigUrl: "https://github.com/idasm-unibe-ch"
+githubConfigSecret: "idasm-ghec-runner"
+runnerScaleSetName: "idasm-ghec-runner"
+runnerGroup: "arc-runners"
+
+minRunners: 1
+maxRunners: 10
+containerMode:
+  type: "dind"
+
+template:
+  spec:
+    containers:
+      - name: runner
+        image: "ghcr.io/id-unibe-ch/cloud-azure-ghrunner-image:main"
+        imagePullPolicy: Always
