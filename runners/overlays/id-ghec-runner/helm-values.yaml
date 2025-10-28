@@ -8,3 +8,11 @@ minRunners: 3
 maxRunners: 30
 containerMode:
   type: "dind"
+
+template:
+  spec:
+    containers:
+      - name: runner
+        image: "ghcr.io/id-unibe-ch/cloud-azure-ghrunner-image:main"
+        imagePullPolicy: Always
+        command: ["/home/runner/run.sh"]
