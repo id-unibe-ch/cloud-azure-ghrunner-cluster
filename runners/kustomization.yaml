@@ -2,3 +2,4 @@ resources:
   - ./overlays/id-ghec-runner
   - ./overlays/id-ghes-runner
   - ./overlays/idasm-ghec-runner
+  - ./overlays/kevin-studer-ghes-runner
