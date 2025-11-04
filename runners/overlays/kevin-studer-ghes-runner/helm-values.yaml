@@ -2,7 +2,7 @@
 githubConfigUrl: "https://github.unibe.ch/kevin-studer/pariscampusaccount-ws"
 githubConfigSecret: "kevin-studer-ghes-runner"
 runnerScaleSetName: "kevin-studer-ghes-runner"
-runnerGroup: "arc-runners"
+
 
 minRunners: 0
 maxRunners: 10
