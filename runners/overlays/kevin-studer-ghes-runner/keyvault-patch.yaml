@@ -4,15 +4,7 @@
   value: |
     array:
       - |
-        objectName: kevin-studer-ghes-runner-app-id
-        objectType: secret
-        objectVersion: ""
-      - |
-        objectName: kevin-studer-ghes-runner-app-installation-id
-        objectType: secret
-        objectVersion: ""
-      - |
-        objectName: kevin-studer-ghes-runner-app-private-key
+        objectName: kevin-studer-ghes-runner-pat
         objectType: secret
         objectVersion: ""
 
@@ -20,11 +12,7 @@
   path: /spec/secretObjects/0
   value: 
     data: 
-    - objectName: kevin-studer-ghes-runner-app-id
-      key: github_app_id
-    - objectName: kevin-studer-ghes-runner-app-installation-id
-      key: github_app_installation_id
-    - objectName: kevin-studer-ghes-runner-app-private-key
-      key: github_app_private_key
+    - objectName: kevin-studer-ghes-runner-pat
+      key: github_token
     secretName: kevin-studer-ghes-runner
     type: Opaque
