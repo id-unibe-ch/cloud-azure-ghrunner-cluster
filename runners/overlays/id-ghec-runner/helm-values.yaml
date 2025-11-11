@@ -1,7 +1,7 @@
 ---
 githubConfigUrl: "https://github.com/id-unibe-ch"
 githubConfigSecret: "id-ghec-runner"
-runnerScaleSetName: "id-ghec-runner"
+runnerScaleSetName: "id-runner"
 runnerGroup: "arc-runners"
 
 minRunners: 3
