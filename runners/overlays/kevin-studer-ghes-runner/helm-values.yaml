@@ -1,5 +1,5 @@
 ---
-githubConfigUrl: "https://github.unibe.ch/kevin-studer/pariscampusaccount-ws"
+githubConfigUrl: "https://github.unibe.ch/kevin-studer/esb-mqparis"
 githubConfigSecret: "kevin-studer-ghes-runner"
 runnerScaleSetName: "kevin-studer-ghes-runner"
 
