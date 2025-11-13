@@ -3,7 +3,7 @@ secretManagement:
   serviceAccountName: "workload"
   secretProviderClassName: "azure-keyvault-secrets-provider"
   tenantId: "d400387a-212f-43ea-ac7f-77aa12d7977e"
-  clientId: "706d9217-bc27-4786-9149-15627a279f1d"
+  clientId: "1e792cf7-2906-4290-a088-b414afbf5bfa"
 
   keyVault:
     name: "kvunibeidghrunner6rwm"
