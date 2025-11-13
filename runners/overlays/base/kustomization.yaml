@@ -1,5 +1,5 @@
 resources:
   - namespace.yaml
   - helm.yaml
-  - keyvault.yaml
-  - secretpod.yaml
+configurations:
+- kustomizeconfig.yaml

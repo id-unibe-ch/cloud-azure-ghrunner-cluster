@@ -1,18 +1,35 @@
 ---
-githubConfigUrl: "https://github.com/idasm-unibe-ch"
-githubConfigSecret: "idasm-ghec-runner"
-runnerScaleSetName: "idasm-ghec-runner"
-runnerGroup: "arc-runners"
+secretManagement:
+  serviceAccountName: "workload"
+  secretProviderClassName: "azure-keyvault-secrets-provider"
+  tenantId: "d400387a-212f-43ea-ac7f-77aa12d7977e"
+  clientId: "706d9217-bc27-4786-9149-15627a279f1d"
 
-minRunners: 1
-maxRunners: 10
-containerMode:
-  type: "dind"
+  keyVault:
+    name: "kvunibeidghrunner6rwm"
+    objects: 
+      - name: "id-cloud-runners-app-id"
+        value: "github_app_id"
+      - name: "id-cloud-runners-idasmunibech-installation-id"
+        value: "github_app_installation_id"
+      - name: "id-cloud-runners-private-key"
+        value: "github_app_private_key"
 
-template:
-  spec:
-    containers:
-      - name: runner
-        image: "ghcr.io/id-unibe-ch/cloud-azure-ghrunner-image:main"
-        imagePullPolicy: Always
-        command: ["/home/runner/run.sh"]
+github:
+  githubConfigUrl: "https://github.com/idasm-unibe-ch"
+  githubConfigSecret: "idasm-ghec-runner"
+  runnerScaleSetName: "idasm-runner"
+  runnerGroup: "arc-runners"
+
+  minRunners: 1
+  maxRunners: 10
+  containerMode:
+    type: "dind"
+
+  template:
+    spec:
+      containers:
+        - name: runner
+          image: "ghcr.io/id-unibe-ch/cloud-azure-ghrunner-image:main"
+          imagePullPolicy: Always
+          command: ["/home/runner/run.sh"]

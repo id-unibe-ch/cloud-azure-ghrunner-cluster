@@ -1,4 +1,0 @@
----
-- op: replace
-  path: /spec/chartRef/namespace
-  value: kevin-studer-ghes-runner

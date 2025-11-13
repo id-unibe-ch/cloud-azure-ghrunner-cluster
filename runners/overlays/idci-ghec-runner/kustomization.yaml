@@ -1,5 +1,5 @@
 ---
-namespace: id-ghec-runner
+namespace: idci-ghec-runner
 resources:
   - ../base
 configMapGenerator:

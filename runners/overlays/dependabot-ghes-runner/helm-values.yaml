@@ -13,12 +13,12 @@ secretManagement:
 
 github:
   githubConfigUrl: "https://github.unibe.ch/enterprises/university-of-bern"
-  githubConfigSecret: "id-ghes-runner"
-  runnerScaleSetName: "id-runner"
+  githubConfigSecret: "id-ghec-runner"
+  runnerScaleSetName: "dependabot"
   runnerGroup: "arc-runners"
 
-  minRunners: 3
-  maxRunners: 30
+  minRunners: 0
+  maxRunners: 10
   containerMode:
     type: "dind"
 

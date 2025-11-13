@@ -8,17 +8,21 @@ secretManagement:
   keyVault:
     name: "kvunibeidghrunner6rwm"
     objects: 
-      - name: "id-csvcghes-pat"
-        value: "github_token"
+      - name: "id-cloud-runners-app-id"
+        value: "github_app_id"
+      - name: "id-cloud-runners-idciunibech-installation-id"
+        value: "github_app_installation_id"
+      - name: "id-cloud-runners-private-key"
+        value: "github_app_private_key"
 
 github:
-  githubConfigUrl: "https://github.unibe.ch/enterprises/university-of-bern"
-  githubConfigSecret: "id-ghes-runner"
-  runnerScaleSetName: "id-runner"
+  githubConfigUrl: "https://github.com/idci-unibe-ch"
+  githubConfigSecret: "idci-ghec-runner"
+  runnerScaleSetName: "idci-runner"
   runnerGroup: "arc-runners"
 
-  minRunners: 3
-  maxRunners: 30
+  minRunners: 1
+  maxRunners: 10
   containerMode:
     type: "dind"
 
@@ -29,4 +33,3 @@ github:
           image: "ghcr.io/id-unibe-ch/cloud-azure-ghrunner-image:main"
           imagePullPolicy: Always
           command: ["/home/runner/run.sh"]
-
