@@ -15,7 +15,7 @@ github:
   githubConfigUrl: "https://github.unibe.ch/enterprises/university-of-bern"
   githubConfigSecret: "id-ghec-runner"
   runnerScaleSetName: "dependabot"
-  runnerGroup: "arc-runners"
+  runnerGroup: "dependabot"
 
   minRunners: 0
   maxRunners: 10
