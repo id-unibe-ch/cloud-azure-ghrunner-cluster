@@ -6,7 +6,7 @@ secretManagement:
   clientId: "1e792cf7-2906-4290-a088-b414afbf5bfa"
 
   keyVault:
-    name: "kvunibeidghrunner6rwm"
+    name: "kv-id-ghrunner-kv-switze"
     objects: 
       - name: "id-csvcghes-pat"
         value: "github_token"
