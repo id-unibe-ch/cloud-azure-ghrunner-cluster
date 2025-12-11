@@ -1,5 +1,5 @@
 ---
-namespace: id-ghes-runner
+namespace: uni-ghes-runner
 resources:
   - ../base
 configMapGenerator:

@@ -13,9 +13,9 @@ secretManagement:
 
 github:
   githubConfigUrl: "https://github.unibe.ch/enterprises/university-of-bern"
-  githubConfigSecret: "id-ghes-runner"
-  runnerScaleSetName: "id-runner"
-  runnerGroup: "id-runners"
+  githubConfigSecret: "uni-ghes-runner"
+  runnerScaleSetName: "uni-runner"
+  runnerGroup: "uni-runners"
 
   minRunners: 3
   maxRunners: 30

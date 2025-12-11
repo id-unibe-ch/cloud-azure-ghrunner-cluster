@@ -2,5 +2,5 @@ resources:
   - ./overlays/id-ghec-runner
   - ./overlays/idasm-ghec-runner
   - ./overlays/idci-ghec-runner
-  - ./overlays/id-ghes-runner
   - ./overlays/dependabot-ghes-runner
+  - ./overlays/uni-ghes-runner
