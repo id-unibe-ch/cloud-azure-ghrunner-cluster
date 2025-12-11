@@ -15,7 +15,7 @@ github:
   githubConfigUrl: "https://github.unibe.ch/enterprises/university-of-bern"
   githubConfigSecret: "id-ghes-runner"
   runnerScaleSetName: "id-runner"
-  runnerGroup: "arc-runners"
+  runnerGroup: "id-runners"
 
   minRunners: 3
   maxRunners: 30
