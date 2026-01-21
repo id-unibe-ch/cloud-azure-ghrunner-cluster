@@ -21,8 +21,8 @@ github:
   runnerScaleSetName: "ub-runner"
   runnerGroup: "arc-runners"
 
-  minRunners: 3
-  maxRunners: 30
+  minRunners: 1
+  maxRunners: 10
   containerMode:
     type: "dind"
 
