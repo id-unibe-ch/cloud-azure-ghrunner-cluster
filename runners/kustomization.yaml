@@ -4,3 +4,4 @@ resources:
   - ./overlays/idci-ghec-runner
   - ./overlays/dependabot-ghes-runner
   - ./overlays/uni-ghes-runner
+  - ./overlays/ub-ghec-runner

@@ -1,0 +1,35 @@
+---
+secretManagement:
+  serviceAccountName: "workload"
+  secretProviderClassName: "azure-keyvault-secrets-provider"
+  tenantId: "d400387a-212f-43ea-ac7f-77aa12d7977e"
+  clientId: "976321fd-b26c-4a8e-af2f-1be22f0b8a13"
+
+  keyVault:
+    name: "kv-id-ghrunner-kv-switze"
+    objects: 
+      - name: "id-cloud-runners-app-id"
+        value: "github_app_id"
+      - name: "id-cloud-runners-ubunibech-installation-id"
+        value: "github_app_installation_id"
+      - name: "id-cloud-runners-private-key"
+        value: "github_app_private_key"
+
+github:
+  githubConfigUrl: "https://github.com/ub-unibe-ch"
+  githubConfigSecret: "ub-ghec-runner"
+  runnerScaleSetName: "ub-runner"
+  runnerGroup: "arc-runners"
+
+  minRunners: 3
+  maxRunners: 30
+  containerMode:
+    type: "dind"
+
+  template:
+    spec:
+      containers:
+        - name: runner
+          image: "ghcr.io/id-unibe-ch/cloud-azure-ghrunner-image:main"
+          imagePullPolicy: Always
+          command: ["/home/runner/run.sh"]
