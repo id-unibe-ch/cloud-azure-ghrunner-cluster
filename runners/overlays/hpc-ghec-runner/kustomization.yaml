@@ -1,0 +1,8 @@
+---
+namespace: hpc-ghec-runner
+resources:
+  - ../base
+configMapGenerator:
+  - name: helm-values
+    files:
+      - helm-values.yaml
