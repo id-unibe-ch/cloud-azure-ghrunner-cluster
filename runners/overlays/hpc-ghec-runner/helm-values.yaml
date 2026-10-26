@@ -3,7 +3,7 @@ secretManagement:
   serviceAccountName: "workload"
   secretProviderClassName: "azure-keyvault-secrets-provider"
   tenantId: "d400387a-212f-43ea-ac7f-77aa12d7977e"
-  clientId: "976321fd-b26c-4a8e-af2f-1be22f0b8a13"
+  clientId: "3537f78b-6e21-46b6-8400-9731d21f2211"
 
   keyVault:
     name: "kv-id-ghrunner-kv-switze"
